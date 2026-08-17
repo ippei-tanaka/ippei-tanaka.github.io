@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  distDir: "page-out",
+  distDir: "docs",
   /* config options here */
 };
 
