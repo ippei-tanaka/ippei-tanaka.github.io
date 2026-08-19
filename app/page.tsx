@@ -1,10 +1,16 @@
+"use client"
+
+import dynamic from 'next/dynamic'
 import Image from "next/image";
 import Link from "next/link";
 
+const PixiScene = dynamic(() => import('./comp'), { ssr: false })
+const PixiScene2 = dynamic(() => import('./animation'), { ssr: false })
+
 export default function Home() {
   return (
-    <main className="font-mono"> 
-      <header className="p-20 flex flex-col items-center justify-center bg-gray-100">
+    <main className="font-mono relative"> 
+      <header className="p-20 flex flex-col items-center justify-center ">
         <h1 className="font-bold text-4xl mb-10">Ippei Tanaka</h1>
         <p className="text-lg">is a <span className="font-bold">creator</span> dedicated to creating <span className="font-bold">things</span> that have never existed before.</p>
       </header>
@@ -18,6 +24,9 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <div className="absolute top-0 left-0 min-w-full min-h-full -z-1">
+        <PixiScene2 />
+      </div>
     </main>
   );
 }
