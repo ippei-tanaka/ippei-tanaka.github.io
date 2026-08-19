@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ippei Tanaka",
-  description: "Ippei Tanaka is a creator dedicated to creating things that have never existed before.",
+  description: "Ippei Tanaka is a creator creating things like websites, video games, art, and music",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -23,7 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex flex-col">{children}</body>
     </html>
   );
 }
