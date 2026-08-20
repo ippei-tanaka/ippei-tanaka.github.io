@@ -9,18 +9,18 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="font-mono">
-      <header className="p-20 flex flex-col items-center justify-center ">
+      <header className="pt-30 pb-20 px-10 sm:px-20 flex flex-col items-center justify-center ">
         <h1 className="font-bold text-4xl mb-10">Ippei Tanaka</h1>
-        <p className="text-lg">is a creator creating things like <br /><span className="font-bold">websites</span>, <span className="font-bold">video games</span>, <span className="font-bold">art</span>, and <span className="font-bold">music</span></p>
-        <ul className="flex gap-10 mt-10">
-          <li><Link href="https://github.com/ippei-tanaka" target='_blank'><Image src="/github-icon.svg" alt="GitHub" width={40} height={40} /></Link></li>
-          <li><Link href="https://www.instagram.com/natural.math" target='_blank'><Image src="/instagram-icon.svg" alt="Instagram" width={40} height={40} /></Link></li>
-          <li><Link href="https://medium.com/@ippei.tanaka" target='_blank'><Image src="/medium-icon.svg" alt="Medium" width={40} height={40} /></Link></li>
-          <li><Link href="https://soundcloud.com/red-tree-leaf" target='_blank'><Image src="/soundcloud-icon.svg" alt="SoundCloud" width={40} height={40} /></Link></li>
+        <p className="text-lg mb-15">is a creator creating things like <br /><span className="font-bold">websites</span>, <span className="font-bold">video games</span>, <span className="font-bold">art</span>, and <span className="font-bold">music</span></p>
+        <ul className="flex gap-5 sm:gap-10 flex-wrap justify-center">
+          <li className="min-w-[40px]"><Link href="https://github.com/ippei-tanaka" target='_blank'><Image src="/github-icon.svg" alt="GitHub" width={40} height={40} /></Link></li>
+          <li className="min-w-[40px]"><Link href="https://www.instagram.com/natural.math" target='_blank'><Image src="/instagram-icon.svg" alt="Instagram" width={40} height={40} /></Link></li>
+          <li className="min-w-[40px]"><Link href="https://medium.com/@ippei.tanaka" target='_blank'><Image src="/medium-icon.svg" alt="Medium" width={40} height={40} /></Link></li>
+          <li className="min-w-[40px]"><Link href="https://soundcloud.com/red-tree-leaf" target='_blank'><Image src="/soundcloud-icon.svg" alt="SoundCloud" width={40} height={40} /></Link></li>
         </ul>
       </header>
-      <section className="px-20 pb-20 flex flex-col items-center justify-center">
-        <h2 className="font-bold text-2xl mb-10">Projects</h2>
+      <section className="px-10 sm:px-20 pb-10 flex flex-col items-center justify-center">
+        <h2 className="font-bold text-xl mb-5 sm:mb-10">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <section className="border p-5 rounded-lg">
             <Link href="https://buyfromhere.ca/" target='_blank' ><Image src="/from-here.png" alt="From Here" width={300} height={216} className="rounded-lg" /></Link>
@@ -48,8 +48,8 @@ export default function Home() {
         </div>
       </section>
       {/* <Animation /> */}
-      <footer className="p-20 flex flex-col items-center justify-center">
-        <p className="text-sm">© 2026 Ippei Tanaka. All rights reserved.</p>
+      <footer className="px-10 pt-10 pb-30 sm:px-20 flex flex-col items-center justify-center">
+        <p className="text-xs">© 2026 Ippei Tanaka. All rights reserved.</p>
       </footer>
     </main>
   );
