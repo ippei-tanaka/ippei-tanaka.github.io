@@ -13,10 +13,11 @@ export default function Home() {
         <h1 className="font-bold text-4xl mb-10">Ippei Tanaka</h1>
         <p className="text-lg mb-15">is a creator creating things like <br /><span className="font-bold">websites</span>, <span className="font-bold">video games</span>, <span className="font-bold">art</span>, and <span className="font-bold">music</span></p>
         <ul className="flex gap-5 sm:gap-10 flex-wrap justify-center">
-          <li className="min-w-[40px]"><Link href="https://github.com/ippei-tanaka" target='_blank'><Image src="/github-icon.svg" alt="GitHub" width={40} height={40} /></Link></li>
-          <li className="min-w-[40px]"><Link href="https://www.instagram.com/natural.math" target='_blank'><Image src="/instagram-icon.svg" alt="Instagram" width={40} height={40} /></Link></li>
-          <li className="min-w-[40px]"><Link href="https://medium.com/@ippei.tanaka" target='_blank'><Image src="/medium-icon.svg" alt="Medium" width={40} height={40} /></Link></li>
-          <li className="min-w-[40px]"><Link href="https://soundcloud.com/red-tree-leaf" target='_blank'><Image src="/soundcloud-icon.svg" alt="SoundCloud" width={40} height={40} /></Link></li>
+          <li className="min-w-[35px]"><Link href="https://github.com/ippei-tanaka" target='_blank'><Image src="/github-icon.svg" alt="GitHub" width={35} height={35} /></Link></li>
+          <li className="min-w-[35px]"><Link href="https://www.linkedin.com/in/ippei-tanaka-52544a428/" target='_blank'><Image src="/linkedin-icon.svg" alt="SoundCloud" width={35} height={35} /></Link></li>
+          <li className="min-w-[35px]"><Link href="https://www.instagram.com/natural.math" target='_blank'><Image src="/instagram-icon.svg" alt="Instagram" width={35} height={35} /></Link></li>
+          <li className="min-w-[35px]"><Link href="https://medium.com/@ippei.tanaka" target='_blank'><Image src="/medium-icon.svg" alt="Medium" width={35} height={35} /></Link></li>
+          <li className="min-w-[35px]"><Link href="https://soundcloud.com/red-tree-leaf" target='_blank'><Image src="/soundcloud-icon.svg" alt="SoundCloud" width={35} height={35} /></Link></li>
         </ul>
       </header>
       <section className="px-10 sm:px-20 pb-10 flex flex-col items-center justify-center">
