@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Ippei Tanaka</title>
+  <desc id="logo-desc">A dark I and orange T monogram.</desc>
+  <path fill="none" stroke="#1f2421" stroke-linecap="round" stroke-width="12" d="M13 16v32"/>
+  <path fill="none" stroke="#e05b45" stroke-linecap="round" stroke-width="12" d="M29 16h24M41 16v32"/>
+</svg>

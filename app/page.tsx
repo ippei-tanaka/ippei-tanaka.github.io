@@ -11,7 +11,9 @@ export default function Home() {
     <main className="site-shell">
       <header className="hero-section">
         <nav className="site-nav" aria-label="Primary navigation">
-          <span className="nav-mark">IT / 26</span>
+          <Link href="/" className="nav-mark" aria-label="Ippei Tanaka home">
+            <Image src="/it-logo.svg" alt="" width={32} height={32} priority />
+          </Link>
           <span className="nav-label">Independent creator</span>
         </nav>
         <div className="hero-content">
