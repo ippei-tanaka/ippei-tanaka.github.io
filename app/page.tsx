@@ -43,7 +43,7 @@ export default function Home() {
             <Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/flow-board.png" alt="Flow Board" width={600} height={432} className="project-image" /></Link>
             <div className="project-copy">
               <div className="project-info"><div><p className="project-type">Web Application</p><h3><Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer">Flow Board <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2026</p></div>
-              <p className="project-description">A Trello-like task management app with live drag-and-drop boards, built with React, Next.js, PostgreSQL, and Drizzle ORM, and deployed on Vercel with AI-assisted development.</p>
+              <p className="project-description">A Trello-like task management app with live drag-and-drop boards, built with React, Next.js, PostgreSQL, and Drizzle ORM, and deployed on Vercel with AI-assisted development. Implemented automated tests with Vitest to verify application functionality and help prevent regressions. Set up GitHub Actions for continuous integration, automatically running tests on code changes.</p>
               <ul className="project-keywords" aria-label="Flow Board keywords">
                 <li>Frontend</li>
                 <li>Backend</li>
@@ -51,6 +51,8 @@ export default function Home() {
                 <li>Next.js</li>
                 <li>PostgreSQL</li>
                 <li>Drizzle ORM</li>
+                <li>Vitest</li>
+                <li>GitHub Actions (CI)</li>
               </ul>
             </div>
           </article>
