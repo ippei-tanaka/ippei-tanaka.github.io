@@ -38,9 +38,18 @@ export default function Home() {
         </div>
         <div className="project-grid">
           <article className="project-card project-card-featured">
+            <Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/flow-board.png" alt="Flow Board" width={600} height={432} className="project-image" /></Link>
+            <div className="project-copy">
+              <div className="project-info"><div><p className="project-type">Web App / backend / frontend</p><h3><Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer">Flow Board <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2026</p></div>
+              <p className="project-description">Reusable UI components built with CSS and TypeScript.</p>
+            </div>
+          </article>
+          <article className="project-card">
             <Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/from-here.png" alt="From Here website" width={600} height={432} className="project-image" /></Link>
-            <div className="project-info"><div><p className="project-type">Web design / development</p><h3><Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer">From Here <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2025</p></div>
-            <p className="project-description">Reusable UI components built with CSS and TypeScript.</p>
+            <div className="project-copy">
+              <div className="project-info"><div><p className="project-type">Web design / frontend</p><h3><Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer">From Here <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2025</p></div>
+              <p className="project-description">Reusable UI components built with CSS and TypeScript.</p>
+            </div>
           </article>
           <article className="project-card">
             <Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/chill-maze.png" alt="Chill Maze game" width={600} height={432} className="project-image" /></Link>
