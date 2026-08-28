@@ -8,49 +8,55 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="font-mono">
-      <header className="pt-30 pb-20 px-10 sm:px-20 flex flex-col items-center justify-center ">
-        <h1 className="font-bold text-4xl mb-10">Ippei Tanaka</h1>
-        <p className="text-lg mb-15">is a creator creating things like <br /><span className="font-bold">websites</span>, <span className="font-bold">video games</span>, <span className="font-bold">art</span>, and <span className="font-bold">music</span></p>
-        <ul className="flex gap-5 sm:gap-10 flex-wrap justify-center">
-          <li className="min-w-[35px]"><Link href="https://github.com/ippei-tanaka" target='_blank'><Image src="/github-icon.svg" alt="GitHub" width={35} height={35} /></Link></li>
-          <li className="min-w-[35px]"><Link href="https://www.linkedin.com/in/ippei-tanaka-52544a428/" target='_blank'><Image src="/linkedin-icon.svg" alt="SoundCloud" width={35} height={35} /></Link></li>
-          <li className="min-w-[35px]"><Link href="https://www.instagram.com/natural.math" target='_blank'><Image src="/instagram-icon.svg" alt="Instagram" width={35} height={35} /></Link></li>
-          <li className="min-w-[35px]"><Link href="https://medium.com/@ippei.tanaka" target='_blank'><Image src="/medium-icon.svg" alt="Medium" width={35} height={35} /></Link></li>
-          <li className="min-w-[35px]"><Link href="https://soundcloud.com/red-tree-leaf" target='_blank'><Image src="/soundcloud-icon.svg" alt="SoundCloud" width={35} height={35} /></Link></li>
-        </ul>
+    <main className="site-shell">
+      <header className="hero-section">
+        <nav className="site-nav" aria-label="Primary navigation">
+          <span className="nav-mark">IT / 26</span>
+          <span className="nav-label">Independent creator</span>
+        </nav>
+        <div className="hero-content">
+          <p className="eyebrow">Web / play / image / sound</p>
+          <h1>Ippei<br /><span>Tanaka</span></h1>
+          <div className="hero-intro">
+            <p className="hero-statement">I make thoughtful digital experiences and playful worlds.</p>
+            <p className="hero-detail">A multidisciplinary creator working across websites, video games, art, and music.</p>
+          </div>
+          <ul className="social-links" aria-label="Social links">
+            <li><Link href="https://github.com/ippei-tanaka" target="_blank" rel="noreferrer" aria-label="GitHub"><Image src="/github-icon.svg" alt="" width={24} height={24} /></Link></li>
+            <li><Link href="https://www.linkedin.com/in/ippei-tanaka-52544a428/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Image src="/linkedin-icon.svg" alt="" width={24} height={24} /></Link></li>
+            <li><Link href="https://www.instagram.com/natural.math" target="_blank" rel="noreferrer" aria-label="Instagram"><Image src="/instagram-icon.svg" alt="" width={24} height={24} /></Link></li>
+            <li><Link href="https://medium.com/@ippei.tanaka" target="_blank" rel="noreferrer" aria-label="Medium"><Image src="/medium-icon.svg" alt="" width={24} height={24} /></Link></li>
+            <li><Link href="https://soundcloud.com/red-tree-leaf" target="_blank" rel="noreferrer" aria-label="SoundCloud"><Image src="/soundcloud-icon.svg" alt="" width={24} height={24} /></Link></li>
+          </ul>
+        </div>
       </header>
-      <section className="px-10 sm:px-20 pb-10 flex flex-col items-center justify-center">
-        <h2 className="font-bold text-xl mb-5 sm:mb-10">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <section className="border p-5 rounded-lg">
-            <Link href="https://buyfromhere.ca/" target='_blank' ><Image src="/from-here.png" alt="From Here" width={300} height={216} className="rounded-lg" /></Link>
-            <h3 className="font-bold text-xl mt-5"><Link href="https://buyfromhere.ca/" target='_blank' >From Here</Link></h3>
-            <p className="mt-2 max-w-[300px] text-sm">Created reusable UI components by writing CSS and TypeScript.</p>
-            <p className="mt-2 max-w-[300px] text-xs">2025</p>
-          </section>
-          <section className="border p-5 rounded-lg">
-            <Link href="https://red-tree.itch.io/chill-maze" target='_blank' ><Image src="/chill-maze.png" alt="Chill Maze" width={300} height={216} className="rounded-lg" /></Link>
-            <h3 className="font-bold text-xl mt-5"><Link href="https://red-tree.itch.io/chill-maze" target='_blank' >Chill Maze</Link></h3>
-            <p className="mt-2 max-w-[300px] text-sm">A 3D maze game using TypeScript and PixiJS.</p>
-            <p className="mt-2 max-w-[300px] text-xs">
-              <span>2023</span>
-            </p>
-          </section>
-          <section className="border p-5 rounded-lg">
-            <Link href="https://ippei-tanaka.github.io/spider-solitaire/" target='_blank' ><Image src="/spider-solitaire.png" alt="Spider Solitaire" width={300} height={239} className="rounded-lg" /></Link>
-            <h3 className="font-bold text-xl mt-5"><Link href="https://ippei-tanaka.github.io/spider-solitaire/" target='_blank' >Spider Solitaire</Link></h3>
-            <p className="mt-2 max-w-[300px] text-sm">A digital version of the classic card game using React and TypeScript.</p>
-            <p className="mt-2 max-w-[300px] text-xs">
-              <span>2022</span>,
-              <Link href="https://github.com/ippei-tanaka/spider-solitaire" target='_blank' className="ml-2 text-blue-500 hover:underline">Source on GitHub</Link>
-            </p>
-          </section>
+      <section className="projects-section" aria-labelledby="projects-heading">
+        <div className="section-heading">
+          <p className="eyebrow">Selected work</p>
+          <h2 id="projects-heading">Projects</h2>
+          <span className="project-count">03 / 03</span>
+        </div>
+        <div className="project-grid">
+          <article className="project-card project-card-featured">
+            <Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/from-here.png" alt="From Here website" width={600} height={432} className="project-image" /></Link>
+            <div className="project-info"><div><p className="project-type">Web design / development</p><h3><Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer">From Here <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2025</p></div>
+            <p className="project-description">Reusable UI components built with CSS and TypeScript.</p>
+          </article>
+          <article className="project-card">
+            <Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/chill-maze.png" alt="Chill Maze game" width={600} height={432} className="project-image" /></Link>
+            <div className="project-info"><div><p className="project-type">Game / interactive</p><h3><Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer">Chill Maze <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2023</p></div>
+            <p className="project-description">A quiet 3D maze game made with TypeScript and PixiJS.</p>
+          </article>
+          <article className="project-card">
+            <Link href="https://ippei-tanaka.github.io/spider-solitaire/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/spider-solitaire.png" alt="Spider Solitaire game" width={600} height={478} className="project-image" /></Link>
+            <div className="project-info"><div><p className="project-type">Game / web app</p><h3><Link href="https://ippei-tanaka.github.io/spider-solitaire/" target="_blank" rel="noreferrer">Spider Solitaire <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2022</p></div>
+            <p className="project-description">A digital take on the classic card game using React and TypeScript. <Link href="https://github.com/ippei-tanaka/spider-solitaire" target="_blank" rel="noreferrer" className="source-link">View source</Link></p>
+          </article>
         </div>
       </section>
       {/* <Animation /> */}
-      <footer className="px-10 pt-10 pb-30 sm:px-20 flex flex-col items-center justify-center">
-        <p className="text-xs">© 2026 Ippei Tanaka. All rights reserved.</p>
+      <footer className="site-footer">
+        <p>© 2026 Ippei Tanaka</p><p>Made with curiosity.</p>
       </footer>
     </main>
   );
