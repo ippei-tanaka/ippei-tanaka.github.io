@@ -36,32 +36,33 @@ export default function Home() {
         <div className="section-heading">
           <p className="eyebrow">Selected work</p>
           <h2 id="projects-heading">Projects</h2>
-          <span className="project-count">03 / 03</span>
+          <span className="project-count">04 / 04</span>
         </div>
         <div className="project-grid">
           <article className="project-card project-card-featured">
             <Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/flow-board.png" alt="Flow Board" width={600} height={432} className="project-image" /></Link>
             <div className="project-copy">
-              <div className="project-info"><div><p className="project-type">Web App / backend / frontend</p><h3><Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer">Flow Board <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2026</p></div>
-              <p className="project-description">Reusable UI components built with CSS and TypeScript.</p>
+              <div className="project-info"><div><p className="project-type">Web Application</p><h3><Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer">Flow Board <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2026</p></div>
+              <p className="project-description">A Trello-like task management app with live drag-and-drop boards, built with React, Next.js, PostgreSQL, and Drizzle ORM, and deployed on Vercel with AI-assisted development.</p>
             </div>
           </article>
           <article className="project-card">
             <Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/from-here.png" alt="From Here website" width={600} height={432} className="project-image" /></Link>
             <div className="project-copy">
-              <div className="project-info"><div><p className="project-type">Web design / frontend</p><h3><Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer">From Here <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2025</p></div>
-              <p className="project-description">Reusable UI components built with CSS and TypeScript.</p>
+              <div className="project-info"><div><p className="project-type">Website</p><h3><Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer">From Here <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2025</p></div>
+              <p className="project-description">A polished web experience for discovering and supporting independent Canadian businesses, built with responsive frontend design and reusable UI components.</p>
             </div>
           </article>
           <article className="project-card">
             <Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/chill-maze.png" alt="Chill Maze game" width={600} height={432} className="project-image" /></Link>
-            <div className="project-info"><div><p className="project-type">Game / interactive</p><h3><Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer">Chill Maze <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2023</p></div>
-            <p className="project-description">A quiet 3D maze game made with TypeScript and PixiJS.</p>
+            <div className="project-info"><div><p className="project-type">Game</p><h3><Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer">Chill Maze <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2023</p></div>
+            <p className="project-description">A contemplative 3D maze game that pairs atmospheric exploration with thoughtful level design, built with TypeScript, PixiJS and Blender.</p>
           </article>
           <article className="project-card">
             <Link href="https://ippei-tanaka.github.io/spider-solitaire/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/spider-solitaire.png" alt="Spider Solitaire game" width={600} height={478} className="project-image" /></Link>
             <div className="project-info"><div><p className="project-type">Game / web app</p><h3><Link href="https://ippei-tanaka.github.io/spider-solitaire/" target="_blank" rel="noreferrer">Spider Solitaire <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2022</p></div>
-            <p className="project-description">A digital take on the classic card game using React and TypeScript. <Link href="https://github.com/ippei-tanaka/spider-solitaire" target="_blank" rel="noreferrer" className="source-link">View source</Link></p>
+            <p className="project-description">A responsive browser adaptation of the classic Spider Solitaire card game, built with React and TypeScript, with undo and hint features and Jest tests covering its complex game rules.</p>
+            <p className="project-addition"><Link href="https://github.com/ippei-tanaka/spider-solitaire" target="_blank" rel="noreferrer" className="source-link">View source</Link></p>
           </article>
         </div>
       </section>
