@@ -44,6 +44,14 @@ export default function Home() {
             <div className="project-copy">
               <div className="project-info"><div><p className="project-type">Web Application</p><h3><Link href="https://flow-board-seven-alpha.vercel.app/" target="_blank" rel="noreferrer">Flow Board <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2026</p></div>
               <p className="project-description">A Trello-like task management app with live drag-and-drop boards, built with React, Next.js, PostgreSQL, and Drizzle ORM, and deployed on Vercel with AI-assisted development.</p>
+              <ul className="project-keywords" aria-label="Flow Board keywords">
+                <li>Frontend</li>
+                <li>Backend</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>PostgreSQL</li>
+                <li>Drizzle ORM</li>
+              </ul>
             </div>
           </article>
           <article className="project-card">
@@ -51,17 +59,36 @@ export default function Home() {
             <div className="project-copy">
               <div className="project-info"><div><p className="project-type">Website</p><h3><Link href="https://buyfromhere.ca/" target="_blank" rel="noreferrer">From Here <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2025</p></div>
               <p className="project-description">A polished web experience for discovering and supporting independent Canadian businesses, built with responsive frontend design and reusable UI components.</p>
+              <ul className="project-keywords" aria-label="From Here keywords">
+                <li>Frontend</li>
+                <li>React</li>
+                <li>Responsive UI</li>
+                <li>Component Design</li>
+              </ul>
             </div>
           </article>
           <article className="project-card">
             <Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/chill-maze.png" alt="Chill Maze game" width={600} height={432} className="project-image" /></Link>
             <div className="project-info"><div><p className="project-type">Game</p><h3><Link href="https://red-tree.itch.io/chill-maze" target="_blank" rel="noreferrer">Chill Maze <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2023</p></div>
             <p className="project-description">A contemplative 3D maze game that pairs atmospheric exploration with thoughtful level design, built with TypeScript, PixiJS and Blender.</p>
+            <ul className="project-keywords" aria-label="Chill Maze keywords">
+              <li>Game Development</li>
+              <li>TypeScript</li>
+              <li>PixiJS</li>
+              <li>Pixi3D</li>
+              <li>Blender</li>
+              <li>3D Design</li>
+            </ul>
           </article>
           <article className="project-card">
             <Link href="https://ippei-tanaka.github.io/spider-solitaire/" target="_blank" rel="noreferrer" className="project-image-link"><Image src="/spider-solitaire.png" alt="Spider Solitaire game" width={600} height={478} className="project-image" /></Link>
             <div className="project-info"><div><p className="project-type">Game / web app</p><h3><Link href="https://ippei-tanaka.github.io/spider-solitaire/" target="_blank" rel="noreferrer">Spider Solitaire <span aria-hidden="true">↗</span></Link></h3></div><p className="project-year">2022</p></div>
             <p className="project-description">A responsive browser adaptation of the classic Spider Solitaire card game, built with React and TypeScript, with undo and hint features and Jest tests covering its complex game rules.</p>
+            <ul className="project-keywords" aria-label="Spider Solitaire keywords">
+              <li>Game Development</li>
+              <li>TypeScript</li>
+              <li>Jest</li>
+            </ul>
             <p className="project-addition"><Link href="https://github.com/ippei-tanaka/spider-solitaire" target="_blank" rel="noreferrer" className="source-link">View source</Link></p>
           </article>
         </div>
