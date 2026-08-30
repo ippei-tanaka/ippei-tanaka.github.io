@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { redirect } from 'next/navigation';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,10 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ippei Tanaka",
-  description: "Ippei Tanaka is a creator creating things like websites, video games, art, and music",
+  description: "Ippei Tanaka is a creator creating things like websites, video games, art, and music"
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  redirect('https://ippei.one');
   return (
     <html
       lang="en"
